@@ -1,0 +1,455 @@
+.home {
+    justify-content: center;
+    text-align: center;
+    min-height: 55vh;
+    align-items: center;
+    margin: 0 180px;
+    position: relative;
+    color: var(--cor-preta);
+}
+
+.pag-initial {
+    min-height: 85vh;
+    z-index: -1;
+}
+
+.home:after {
+    content: url('../../assets/img/seta_branca.png');
+    position: absolute;
+    bottom: -50px;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    filter: invert(100%)
+}
+
+.home .text-home {
+    letter-spacing: 1px;
+    font-family: var(--fonte-secundaria);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.home .text-home p {
+    font-size: var(--fonte-normal);
+    text-align: start;
+    margin-bottom: -10px;
+}
+
+.home .text-home .redes-sociais {
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+
+.home .text-home .redes-sociais a {
+    display: inline-block;
+    font-size: 25px;
+    width: 50px;
+    color: var(--cor-azul);
+    transition: .3s ease-in-out;
+}
+
+.home .text-home .redes-sociais a:hover {
+    opacity: 0.7;
+}
+
+.home .text-home h3 {
+    font-size: 10rem;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.home .text-home h2 {
+    font-size: 8rem;
+    letter-spacing: 1px;
+    text-align: start;
+    margin-bottom: -20px;
+}
+
+
+
+.about-me {
+    padding: 6rem;
+}
+
+.about-me .img-about-me {
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.img-about-me .img-box {
+    border-radius: 50%;
+}
+
+.about-me .container {
+    padding-bottom: 200px;
+}
+
+.container .img-info {
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.container .img-info div:nth-child(2) {
+    transition: all 0.8s;
+    transition-delay: 400ms;
+}
+
+.img-about-me .img-box img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid 10px transparent;
+    filter: brightness(68%);
+}
+
+.about-me .info-about-me {
+    max-width: 50%;
+    padding: 0 25px;
+    margin: auto 0 auto 60px;
+    letter-spacing: 1px;
+}
+
+.about-me .info-about-me .botoes {
+    margin-top: 60px;
+}
+
+.about-me .info-about-me p {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-me .botao {
+    font-size: 2rem;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+    border-radius: 20px;
+}
+
+.about-me .botao:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+}
+
+
+
+.technologies {
+    padding: 60px;
+    padding-top: 30px;
+}
+
+.technologies .container .container-technologies {
+    justify-content: center;
+    gap: 80px 50px;
+    margin: 70px;
+}
+
+.technologies .container .technology {
+    padding: 40px 50px;
+    width: 265px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: white;
+    background-color: oklch(37.8% 0.015 216);
+}
+
+.technologies .container h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+/* .technologies .container .technology:hover h3 {
+    color: var(--cor-azul);
+} */
+
+.technologies .container .container-technologies i {
+    font-size: 90px;
+}
+
+
+
+.projects {
+    padding: 30px 55px;
+}
+
+.projects .container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+    padding: 130px 0 170px 20px;
+}
+
+.projects .container-projetos .project:nth-child(2),
+.projects .container-projetos .project:nth-child(4),
+.projects .container-projetos .project:nth-child(6) {
+    transition: 0.5s;
+    transition-delay: 400ms;
+}
+
+.projects .container-projetos .project:nth-child(3),
+.projects .container-projetos .project:nth-child(5) {
+    transition: 0.5s;
+    transition-delay: 100ms;
+}
+
+.projects .container-projetos .project {
+    position: relative;
+    transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+}
+
+.projects .container-projetos .project img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.projects .container-projetos .project .img-phone img {
+    position: absolute;
+    bottom: -70px;
+    left: -70px;
+    width: 27%;
+    z-index: 2;
+    transition: .2s ease-in-out;
+}
+
+.projects .container-projetos .project .size-img {
+    max-width: 600px;
+}
+
+.projects .project .info-project {
+    position: absolute;
+    top: 0;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+    padding: 35px;
+    text-align: center;
+    padding-left: 22%;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    opacity: 0;
+    transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.projects .project .info-project .links-project {
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.projects .project .info-project a {
+    font-weight: 700;
+    line-height: 35px;
+    transition: 0.7s ease;
+}
+
+.projects .project .info-project a:hover {
+    color: var(--cor-azul);
+}
+
+.projects .container-projetos .project h3 {
+    position: absolute;
+    bottom: 0;
+    font-weight: 500;
+    padding: 15px 0 15px 60px;
+    background-color: var(--cor-preta);
+    text-align: center;
+    color: var(--cor-branca);
+    width: 100%;
+    font-size: 2rem;
+    opacity: 0.8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.projects .container-projetos .project:hover .info-project {
+    opacity: 0.9;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.4);
+}   
+
+.footer .redes-sociais a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 0 8px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    line-height: 50px;
+}
+
+.redes-sociais a:hover {
+    color: var(--cor-azul);
+}
+
+.footer h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+    margin: 5rem;
+}
+
+@keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.5rem);
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 1441px) {
+    .home:after {
+        bottom: -20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .projects .container-projetos {
+        padding: 60px 0 150px 0;
+    }
+
+}
+
+@media (max-width: 1060px) {
+    .about-me .img-about-me {
+        max-width: 60%;
+        margin-bottom: 50px;
+        padding: 0 40px;
+    }
+
+    .container .img-info {
+        margin-top: 10px;
+    }
+
+    .about-me .info-about-me {
+        text-align: center;
+        margin: 0;
+        padding: 0 30px;
+        max-width: 100%;
+    }
+
+    .about-me .container {
+        padding-bottom: 60px;
+    }
+
+    .technologies .container .container-technologies {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .home:after {
+        display: none;
+    }
+
+    .technologies {
+        padding: 70px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 680px) {
+    .home {
+        margin: 0;
+    }
+
+    .about-me .info-about-me {
+        padding: 0;
+    }
+
+    .about-me {
+        padding: 30px;
+    }
+
+    .about-me .img-about-me {
+        max-width: 80%;
+        padding: 0;
+    }
+
+    .technologies {
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    .technologies .container h3 {
+        font-size: var(--fonte-normal);
+    }
+
+    .projects {
+        padding: 30px;
+    }
+
+    .projects .container-projetos .project h3 {
+        font-size: 1.6rem;
+        padding: 10px 0 10px 15px;
+    }
+
+    .projects .container-projetos {
+        gap: 50px;
+        padding: 60px 0;
+    }
+
+    .footer {
+        padding: 3rem;
+    }
+
+    .footer h3 {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .home .text-home p {
+        font-size: var(--fonte-normal);
+        margin-bottom: 10px;
+    }
+
+    .home .text-home h2 {
+        margin-bottom: 20px;
+        font-size: var(--fonte-extra-grande);
+        font-weight: 700;
+    }
+
+    .home .text-home h3 {
+        font-size: var(--fonte-normal);
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,18 @@
+:root {
+    --cor-azul: oklch(58.8% 0.158 241.966);
+    --cor-branca: #ffffff;
+    --cor-preta: #000000;
+    --icone-html: #D2691E;
+    --icone-css: #1E90FF;
+    --icone-js: yellow;
+}
+
+:root {
+    --fonte-primaria: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Raleway', sans-serif;
+    --fonte-gigante: 4.5rem;
+    --fonte-extra-grande: 3.5rem;
+    --fonte-grande: 3rem;
+    --fonte-normal: 2.4rem;
+    --fonte-pequena: 1.6rem;
+}
