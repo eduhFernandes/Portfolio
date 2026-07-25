@@ -120,7 +120,7 @@
     margin-bottom: 20px;
 }
 
-.about-me .botao {
+.about-me .botao-curriculo {
     font-size: 2rem;
     padding: 10px 20px;
     transition: 0.3s ease;
@@ -129,7 +129,7 @@
     border-radius: 20px;
 }
 
-.about-me .botao:hover {
+.about-me .botao-curriculo:hover {
     background-color: var(--cor-azul);
     color: var(--cor-branca);
 }
