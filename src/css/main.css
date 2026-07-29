@@ -141,27 +141,38 @@
     padding-top: 30px;
 }
 
-.technologies .container .container-technologies {
-    justify-content: center;
-    gap: 80px 50px;
-    margin: 70px;
+.technologies .category {
+    background-color: oklch(37.8% 0.015 216);
+    color: white;
+    border-radius: 15px;
+    padding: 50px 80px 80px 80px;
+    margin: 50px 150px;
 }
 
-.technologies .container .technology {
-    padding: 40px 50px;
-    width: 265px;
-    height: 270px;
+.technologies .category h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+
+.technologies .container-technologies {
+    justify-content: start;
+    gap: 80px 50px;
+}
+
+.technologies .technology {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
     color: white;
-    border: 1px solid white;
-    background-color: oklch(37.8% 0.015 216);
 }
 
-.technologies .container h3 {
+.technologies h3 {
     font-size: 26px;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -169,7 +180,7 @@
     transition: 0.2s ease-in-out;
 }
 
-.technologies .container .container-technologies i {
+.technologies .container-technologies i {
     font-size: 90px;
 }
 
@@ -282,8 +293,8 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color: rgba(0,0,0,0.4);
-}   
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .footer .redes-sociais a {
     display: inline-block;
